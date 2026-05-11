@@ -1,6 +1,6 @@
 { ... }:
 {
-  programs.vscode.profiles.default = {
+  programs.vscodium.profiles.default = {
     userSettings = {
       "update.mode" = "none";
       "extensions.autoUpdate" = false; # This stuff fixes vscode freaking out when theres an update
@@ -44,23 +44,20 @@
 
       "editor.mouseWheelZoom" = true;
 
-      # C/C++
+      ## C/C++
       "clangd.arguments" = [
         "--clang-tidy"
         "--inlay-hints=false"
       ];
 
-      # Zig
-      # "zig.initialSetupDone" = true;
-      "zig.checkForUpdate" = false;
-      "zig.zls.path" = "zls";
+      ## Zig
       "zig.path" = "zig";
-      "zig.revealOutputChannelOnFormattingError" = false;
-      "zig.zls.enableInlayHints" = false;
-      "zig.zls.enableArgumentPlaceholders" = false;
-      "zig.zls.enableBuildOnSave" = true;
-      "zig.zls.buildOnSaveArgs" = [ ];
+      "zig.zls.path" = "zls";
+      "zig.zls.enabled" = "on";
+      "zig.zls.warnStyle" = true;
+      "zig.buildOnSaveProvider" = "zls";
 
+      ## Nix
       "nix.serverPath" = "nixd";
       "nix.enableLanguageServer" = true;
       # "nix.serverSettings" = {

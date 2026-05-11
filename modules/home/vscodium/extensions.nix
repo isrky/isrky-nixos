@@ -12,13 +12,14 @@ let
       };
 in
 {
-  programs.vscode.profiles.default = {
+  programs.vscodium.profiles.default = {
     extensions = with pkgs.vscode-extensions; [
       ## Languages
       jnoortheen.nix-ide
       arrterian.nix-env-selector
       llvm-vs-code-extensions.vscode-clangd
       ziglang.vscode-zig
+      yzhang.markdown-all-in-one
 
       ## Color scheme
       jdinhlife.gruvbox
