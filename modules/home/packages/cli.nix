@@ -22,6 +22,7 @@
     bitwise # cli tool for bit / hex manipulation
     broot # tree files view
     caligula # User-friendly, lightweight TUI for disk imaging
+    google-cloud-sdk # Google Cloud CLI
     hyperfine # benchmarking tool
     just # command runner (makefile like)
     pastel # cli to manipulate colors
@@ -45,7 +46,9 @@
     ## Monitoring / fetch
     htop
     inxi # system information tool
+    nvtopPackages.nvidia # GPU monitor
     onefetch # fetch utility for git repo
+    speedtest-cli # internet speed test tool
     wavemon # monitoring for wireless network devices
 
     ## Fun / screensaver
@@ -73,6 +76,7 @@
     file # Show file information
     jq # JSON processor
     killall
+    lazydocker # Docker TUI
     libnotify
     lsof
     lzip

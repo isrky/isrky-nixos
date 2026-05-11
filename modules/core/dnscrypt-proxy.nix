@@ -13,7 +13,7 @@
     settings = {
       listen_addresses = [ "127.0.0.1:53" ];
 
-      server_names = [ ];
+      server_names = [ "quad9-dnscrypt-ip4-filter-ecs-pri" ];
       ipv4_servers = true;
       ipv6_servers = false;
       block_ipv6 = true;
@@ -23,7 +23,7 @@
 
       require_dnssec = true;
       require_nolog = true;
-      require_nofilter = true;
+      require_nofilter = false;
 
       cache_size = 4096;
       cache_min_ttl = 2400;
@@ -41,25 +41,6 @@
         ];
         cache_file = "/var/cache/dnscrypt-proxy/public-resolvers.md";
         minisign_key = "RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3";
-      };
-
-      sources.relays = {
-        urls = [
-          "https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/relays.md"
-          "https://download.dnscrypt.info/resolvers-list/v3/relays.md"
-        ];
-        cache_file = "/var/cache/dnscrypt-proxy/relays.md";
-        minisign_key = "RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3";
-      };
-
-      anonymized_dns = {
-        routes = [
-          {
-            server_name = "*";
-            via = [ "*" ];
-          }
-        ];
-        skip_incompatible = true;
       };
 
       local_doh = {

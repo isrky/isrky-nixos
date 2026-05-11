@@ -28,6 +28,8 @@
       "networkmanager"
       "wheel"
       "wireshark"
+      "dialout"
+      "uucp"
     ];
     shell = pkgs.zsh;
   };

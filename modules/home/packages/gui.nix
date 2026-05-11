@@ -27,5 +27,18 @@
     godot
     ldtk
     tiled
+
+    ## Communication
+    localsend
+    pear-desktop
+    telegram-desktop
+
+    ## Reverse engineering / hex editors
+    ghex
+    imhex
+    wxhexeditor
+
+    ## AI tools
+    claude-code
   ];
 }

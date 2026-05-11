@@ -16,4 +16,8 @@
     nix-ld.enable = true;
     nix-ld.libraries = with pkgs; [ ];
   };
+
+  services.udev.packages = with pkgs; [
+    openocd
+  ];
 }

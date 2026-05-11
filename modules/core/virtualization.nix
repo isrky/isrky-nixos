@@ -1,9 +1,12 @@
 { pkgs, username, ... }:
 {
+  hardware.nvidia-container-toolkit.enable = true;
+
   # Add user to libvirtd and kvm groups
   users.users.${username}.extraGroups = [
     "libvirtd"
     "kvm"
+    "docker"
   ];
 
   # Install necessary packages
@@ -22,10 +25,7 @@
 
   # Manage the virtualisation services
   virtualisation = {
-    podman = {
-      enable = true;
-      dockerCompat = true;
-    };
+    docker.enable = true;
     libvirtd = {
       enable = true;
       qemu = {

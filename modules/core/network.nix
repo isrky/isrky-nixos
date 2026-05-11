@@ -14,6 +14,7 @@
         8080
         59010
         59011
+        3080
       ];
       allowedUDPPorts = [
         59010
@@ -21,6 +22,7 @@
       ];
       # Allow all traffic from LAN and Tailscale. If your interface names differ, check with: ip link
       trustedInterfaces = [
+        "wlp0s20f3"
         "enp8s0f1"
         "tailscale0"
         "waydroid0"

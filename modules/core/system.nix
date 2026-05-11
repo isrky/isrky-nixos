@@ -27,6 +27,7 @@
   environment.systemPackages = with pkgs; [
     wget
     git
+    vscode
   ];
 
   time.timeZone = "Europe/Istanbul";

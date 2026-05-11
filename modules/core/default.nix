@@ -13,10 +13,12 @@
     ./program.nix
     ./security.nix
     ./services.nix
+    ./zapret.nix
     ./sunshine.nix
     ./code-server.nix
     ./steam.nix
     ./system.nix
+    ./nfc.nix
     ./flatpak.nix
     ./user.nix
     ./wayland.nix
