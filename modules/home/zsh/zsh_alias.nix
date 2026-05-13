@@ -9,6 +9,8 @@
       cat = "bat";
       nano = "micro";
       code = "codium";
+      openclaude = "pnpm dlx @gitlawb/openclaude@latest";
+      apkmitm = "pnpm dlx apk-mitm";
       diff = "delta --diff-so-fancy --side-by-side";
       less = "bat";
       copy = "wl-copy";

@@ -24,12 +24,14 @@
 
     ## JavaScript / Node.js
     nodejs
+    pnpm
     devbox
     bruno
     code-cursor
     aider-chat-full
     gemini-cli-bin
     codex
+    opencode
     antigravity
     litellm
     google-chrome
@@ -37,6 +39,11 @@
 
     ## Security
     burpsuite
+
+    ## JetBrains IDEs
+    jetbrains.gateway
+    jetbrains.pycharm
+    jetbrains.webstorm
 
     ## Android / Mobile
     scrcpy

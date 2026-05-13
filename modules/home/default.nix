@@ -25,6 +25,7 @@
     ./nemo.nix                        # file manager
     ./nvim.nix                        # neovim editor
     ./obsidian.nix
+    ./open-design.nix                  # Open Design AI design agent
     ./p10k/p10k.nix
     ./packages                        # other packages
     ./pomo/pomo.nix                   # TUI Pomodoro timer

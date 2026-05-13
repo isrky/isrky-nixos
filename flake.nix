@@ -28,6 +28,7 @@
     };
     superfile.url = "github:yorukot/superfile";
     zen-browser.url = "github:0xc000022070/zen-browser-flake/beta";
+    open-design.url = "github:nexu-io/open-design";
   };
 
   outputs =
