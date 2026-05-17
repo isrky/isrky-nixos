@@ -22,6 +22,8 @@
     package = null;
     portalPackage = null;
 
+    configType = "hyprlang";
+
     xwayland = {
       enable = true;
       # hidpi = true;
