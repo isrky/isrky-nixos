@@ -25,7 +25,6 @@
       "ALT, Escape, exec, hyprlock & systemctl suspend"
       "$mod SHIFT, Escape, exec, power-menu"
       "$mod, P, exec, power-profile-menu"
-      "$mod, X, togglesplit,"
       "$mod, T, exec, toggle-oppacity"
       "$mod, E, exec, nemo"
       "ALT, E, exec, hyprctl dispatch exec '[float; size 1111 700] nemo'"
