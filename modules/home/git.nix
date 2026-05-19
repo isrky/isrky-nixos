@@ -47,6 +47,7 @@
 
   xdg.configFile."git/.gitignore".text = ''
     .vscode
+    .direnv
   '';
 
   programs.zsh.shellAliases = {
