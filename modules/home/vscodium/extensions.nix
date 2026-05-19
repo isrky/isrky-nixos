@@ -10,16 +10,14 @@ let
           hash = "sha256-86UWUuWKT6adx4hw4OJw3cSZxWZKLH4uLTO+Ssg75gY=";
         };
       };
-  imanolea.z80-asm =
-    pkgs.vscode-utils.buildVscodeMarketplaceExtension
-      {
-        mktplcRef = {
-          name = "z80-asm";
-          publisher = "imanolea";
-          version = "0.0.9";
-          hash = "sha256-uiSEZg9aSMRwdBWAyNtfk9z+3TPflWAv7SKy6qdhvWw=";
-        };
-      };
+  imanolea.z80-asm = pkgs.vscode-utils.buildVscodeMarketplaceExtension {
+    mktplcRef = {
+      name = "z80-asm";
+      publisher = "imanolea";
+      version = "0.0.9";
+      hash = "sha256-uiSEZg9aSMRwdBWAyNtfk9z+3TPflWAv7SKy6qdhvWw=";
+    };
+  };
 in
 {
   programs.vscodium.profiles.default = {
