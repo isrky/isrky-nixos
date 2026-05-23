@@ -20,5 +20,6 @@
     ./wayland.nix
     ./virtualization.nix
     # ./qmk.nix
+    ./piper.nix
   ];
 }
