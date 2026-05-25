@@ -10,37 +10,39 @@
       "editor.fontFamily" = "'Maple Mono', 'SymbolsNerdFont', 'monospace', monospace";
       "terminal.integrated.fontFamily" = "'Maple Mono', 'SymbolsNerdFont'";
       "editor.fontSize" = 18;
+      "editor.rulers" = [ 100 ];
       "workbench.colorTheme" = "Gruvbox Dark Hard";
       "workbench.iconTheme" = "gruvbox-material-icon-theme";
       "material-icon-theme.folders.theme" = "classic";
       "vsicons.dontShowNewVersionMessage" = true;
       "explorer.confirmDragAndDrop" = false;
       "editor.fontLigatures" = true;
-      "editor.minimap.enabled" = false;
+      "editor.minimap.enabled" = true;
       "workbench.startupEditor" = "none";
 
       "editor.formatOnSave" = true;
       "editor.formatOnType" = true;
       "editor.formatOnPaste" = true;
-      "editor.inlayHints.enabled" = "off";
+      "editor.inlayHints.enabled" = "on";
 
       "workbench.layoutControl.type" = "menu";
       "workbench.editor.limit.enabled" = true;
       "workbench.editor.limit.value" = 10;
       "workbench.editor.limit.perEditorGroup" = true;
-      "workbench.editor.showTabs" = "none";
+      "workbench.editor.showTabs" = "multiple";
       "files.autoSave" = "onWindowChange";
       "files.insertFinalNewline" = true;
       "explorer.openEditors.visible" = 0;
-      "breadcrumbs.enabled" = false;
+      "breadcrumbs.enabled" = true;
       "editor.renderControlCharacters" = false;
-      "workbench.activityBar.location" = "hidden";
-      "workbench.statusBar.visible" = false;
+      "workbench.activityBar.location" = "default";
+      "workbench.statusBar.visible" = true;
       "editor.scrollbar.verticalScrollbarSize" = 2;
       "editor.scrollbar.horizontalScrollbarSize" = 2;
       "editor.scrollbar.vertical" = "hidden";
       "editor.scrollbar.horizontal" = "hidden";
       "workbench.layoutControl.enabled" = false;
+      "workbench.sideBar.location" = "right";
 
       "editor.mouseWheelZoom" = true;
 

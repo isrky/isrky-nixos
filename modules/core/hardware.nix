@@ -7,6 +7,11 @@
 
   hardware.enableRedistributableFirmware = true;
 
+  hardware.logitech.wireless = {
+    enable = true;
+    enableGraphical = true;
+  };
+
   hardware.nvidia = {
     modesetting.enable = true;
     open = false;

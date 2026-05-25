@@ -1,6 +1,9 @@
 { pkgs, ... }:
 {
-  home.packages = with pkgs; [ rofi ];
+  home.packages = with pkgs; [
+    rofi
+    rofimoji
+  ];
 
   xdg.configFile."rofi/theme.rasi".source = ./theme.rasi;
   xdg.configFile."rofi/config.rasi".source = ./config.rasi;

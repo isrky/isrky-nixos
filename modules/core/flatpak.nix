@@ -8,6 +8,7 @@
       "com.github.tchx84.Flatseal"
       "dev.geopjr.Collision"
       "io.github.plrigaux.sysd-manager"
+      "org.ferdium.Ferdium"
       "me.iepure.devtoolbox"
       "io.github.dzheremi2.lrcmake-gtk"
       "so.libdb.dissent"

@@ -28,6 +28,9 @@
     ldtk
     tiled
 
+    ## Mapping / GIS
+    josm
+
     ## Communication
     localsend
     pear-desktop
@@ -40,5 +43,7 @@
 
     ## AI tools
     claude-code
+    jan
+    llmfit
   ];
 }

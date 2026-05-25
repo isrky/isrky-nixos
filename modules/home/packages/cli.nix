@@ -11,6 +11,7 @@
     man-pages # extra man pages
     ncdu # disk space
     nmap
+    neovim
     ripgrep # grep replacement
     tldr
 
@@ -32,6 +33,7 @@
     tdf # cli pdf viewer
     tokei # project line counter
     translate-shell # cli translator
+    tmux
     woomer
     yt-dlp-light
     zellij

@@ -26,5 +26,6 @@
     ./tailscale.nix
     # ./qmk.nix
     ./dnscrypt-proxy.nix
+    ./piper.nix
   ];
 }

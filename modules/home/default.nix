@@ -7,6 +7,7 @@
     ./browser.nix                     # firefox based browser
     ./btop.nix                        # resouces monitor 
     ./cava.nix                        # audio visualizer
+    ./direnv.nix
     ./discord.nix                     # discord
     ./easyeffects.nix                 # easyeffects
     ./fastfetch/fastfetch.nix         # fetch tool
@@ -23,9 +24,8 @@
     ./lazygit.nix
     ./micro.nix                       # nano replacement
     ./nemo.nix                        # file manager
-    ./nvim.nix                        # neovim editor
+    # ./nvim.nix                        # neovim editor
     ./obsidian.nix
-    ./open-design.nix                  # Open Design AI design agent
     ./p10k/p10k.nix
     ./packages                        # other packages
     ./pomo/pomo.nix                   # TUI Pomodoro timer

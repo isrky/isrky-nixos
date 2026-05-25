@@ -2,9 +2,19 @@
 {
   programs.zsh = {
     enable = true;
+
     # enableCompletion = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
+
+    history = {
+      share = true;
+      ignoreSpace = true;
+      ignoreDups = true;
+      saveNoDups = true;
+      findNoDups = true;
+      expireDuplicatesFirst = true;
+    };
 
     plugins = [
       {
@@ -125,13 +135,6 @@
       DISABLE_MAGIC_FUNCTIONS=true
       export "MICRO_TRUECOLOR=1"
 
-      setopt sharehistory
-      setopt hist_ignore_space
-      setopt hist_ignore_all_dups
-      setopt hist_save_no_dups
-      setopt hist_ignore_dups
-      setopt hist_find_no_dups
-      setopt hist_expire_dups_first
       setopt hist_verify
 
       source ~/.p10k.zsh

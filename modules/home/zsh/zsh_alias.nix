@@ -10,7 +10,9 @@
       nano = "micro";
       code = "codium";
       openclaude = "pnpm dlx @gitlawb/openclaude@latest";
+      openclaude-npx = "npx -y @gitlawb/openclaude@latest";
       apkmitm = "pnpm dlx apk-mitm";
+      aiderdesk = "pnpm dlx @aiderdesk/aiderdesk";
       diff = "delta --diff-so-fancy --side-by-side";
       less = "bat";
       copy = "wl-copy";
@@ -29,6 +31,8 @@
 
       # Nixos
       cdnix = "cd ~/nixos-config && codium ~/nixos-config";
+      cdpio = "cd /home/ismails/Documents/PlatformIO/Projects";
+      cdprojects = "cd /home/ismails/Documents/projects";
       ns = "nom-shell --run zsh";
       nsp = "nom-shell --run zsh -p";
       nd = "nom develop --command zsh";
@@ -36,7 +40,7 @@
       nc = "nh-notify nh clean all --keep 5";
       nft = "nh-notify nh os test";
       nfs = "nh-notify nh os switch";
-      nfu = "nh-notify nh os switch --update";
+      nfu = "nh-notify nh os boot --update";
       nsearch = "nh search";
 
       # python
