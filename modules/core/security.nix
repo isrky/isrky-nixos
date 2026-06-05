@@ -5,8 +5,8 @@
     sudo.enable = true;
 
     pam.services = {
-      swaylock = { };
-      hyprlock = { };
+      swaylock.enableGnomeKeyring = true;
+      hyprlock.enableGnomeKeyring = true;
     };
   };
 }
