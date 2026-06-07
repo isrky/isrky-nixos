@@ -1,7 +1,9 @@
+Jump to: [Fork Enhancements](#-fork-enhancements--extra-modules)
+
 <h1 align="center">
    <img src="./.github/assets/logo/nixos-logo.png" width="100px" /> 
    <br>
-      Frost-Phoenix's Flakes 
+      isrky's Flakes based on Frost-Phoenix's
    <br>
       <img src="./.github/assets/pallet/pallet-0.png" width="600px" /> <br>
 
@@ -144,6 +146,36 @@ You can find my previous Catppuccin rice [here](https://github.com/Frost-Phoenix
 | **Clipboard**               | [wl-clip-persist][wl-clip-persist] |
 | **Color Picker**            | [hyprpicker][hyprpicker] |
 
+
+## ✨ Fork Enhancements & Extra Modules
+
+This configuration is a customized fork of the upstream `Frost-Phoenix/nixos-config`. It introduces several advanced modules, software suites, and services for developer productivity, networking, virtualization, and AI workflows.
+
+### 🛡️ Network & Privacy
+- **[Zapret](./modules/core/zapret.nix)**: Deep Packet Inspection (DPI) bypass system configured to bypass blocks across specified UDP/TCP ports, with automatic exclusion of local networks and Tailscale subnets.
+- **[DNSCrypt-Proxy](./modules/core/dnscrypt-proxy.nix)**: High-performance secure DNS client featuring DNSSEC verification, strict no-logs requirement, caching, blocked IP lists, and local DoH listening.
+- **[Tailscale & Trayscale](./modules/core/tailscale.nix)**: Integrated Tailscale VPN with the [Trayscale](./modules/home/trayscale.nix) GUI wrapper, running with custom DNS settings (`--accept-dns=false`).
+
+### 🤖 AI-Assisted Workflows
+- **[AI Package Suite](./modules/home/packages/ai.nix)**: Native integration of state-of-the-art local and remote AI tools including `opencode`, `claude-code`, `aider-chat-full`, `gemini-cli-bin`, `litellm`, and `jan`.
+- **VS Codium AI Integrations**: Pre-installed developer companions like `saoudrizwan.claude-dev`, `Google.gemini-cli-vscode-ide-companion`, and `anthropic.claude-code`.
+
+### ⚡ Virtualization & Containerization
+- **[Containerization](./modules/core/virtualization.nix)**: Docker support integrated with Nvidia Container Toolkit for GPU acceleration.
+- **Android Support**: [Waydroid](./modules/core/virtualization.nix) setup optimized using `waydroid-nftables` and custom helper services/mounts.
+
+### 💻 Developer Environments
+- **[Toolchains & SDKs](./modules/home/packages/dev.nix)**:
+  - **Embedded / ESP32**: PlatformIO, esptool, espflash, cargo-espmonitor, espup, and OpenOCD.
+  - **Web & Mobile**: Node.js, pnpm, Android Studio, and Scrcpy.
+  - **JetBrains IDEs**: Declarative access to JetBrains Toolbox, Gateway, IntelliJ IDEA, PyCharm, and WebStorm.
+
+### 📺 Media & Streaming
+- **[Sunshine](./modules/core/sunshine.nix)**: Self-hosted, low-latency, high-performance game-streaming host with automatically opened firewall rules.
+- **[Code-Server](./modules/core/code-server.nix)**: In-browser remote IDE hosting on your local machine, pointing to a persistent VS Code extension directory.
+
+### 🔌 Specialized Hardware
+- **[NFC Support](./modules/core/nfc.nix)**: Bundled tools (`libnfc`, `mfoc`, `mfoc-hardnested`, `mfcuk`) explicitly pre-configured to detect PN532 over HSU/UART on `/dev/ttyUSB0`.
 
 ## 📝 Shell aliases
 
