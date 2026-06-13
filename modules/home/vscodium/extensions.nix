@@ -50,6 +50,11 @@ in
       ## Color scheme
       jdinhlife.gruvbox
       jonathanharty.gruvbox-material-icon-theme
+
+      ## AI
+      saoudrizwan.claude-dev
+      Google.gemini-cli-vscode-ide-companion
+      anthropic.claude-code
     ];
   };
 }

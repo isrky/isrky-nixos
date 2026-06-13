@@ -1,4 +1,4 @@
-{ pkgs, username, ... }:
+{ pkgs, username, inputs, ... }:
 {
   hardware.nvidia-container-toolkit.enable = true;
 
@@ -20,6 +20,8 @@
     win-spice
     adwaita-icon-theme
     distrobox
+    waydroid-helper
+    inputs.nur.legacyPackages.${pkgs.system}.repos.ataraxiasjel.waydroid-script
     # gvisor
   ];
 
@@ -33,6 +35,14 @@
       };
     };
     spiceUSBRedirection.enable = true;
+    waydroid.enable = true;
+    # Newer kernel versions needs
+    waydroid.package = pkgs.waydroid-nftables;
   };
   services.spice-vdagentd.enable = true;
+
+  systemd = {
+    packages = [ pkgs.waydroid-helper ];
+    services.waydroid-mount.wantedBy = [ "multi-user.target" ];
+  };
 }

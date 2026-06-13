@@ -3,6 +3,7 @@
   networking = {
     hostName = "${host}";
     networkmanager.enable = true;
+    search = [ "ts.net" ];
     firewall = {
       enable = true;
       allowedTCPPorts = [

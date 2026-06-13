@@ -28,6 +28,10 @@
     };
     superfile.url = "github:yorukot/superfile";
     zen-browser.url = "github:0xc000022070/zen-browser-flake/beta";
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =

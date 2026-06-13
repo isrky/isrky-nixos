@@ -42,7 +42,7 @@
       "editor.scrollbar.vertical" = "hidden";
       "editor.scrollbar.horizontal" = "hidden";
       "workbench.layoutControl.enabled" = false;
-      "workbench.sideBar.location" = "right";
+      "workbench.sideBar.location" = "left";
 
       "editor.mouseWheelZoom" = true;
 

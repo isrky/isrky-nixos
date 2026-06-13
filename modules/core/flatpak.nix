@@ -6,6 +6,7 @@
     enable = true;
     packages = [
       "com.github.tchx84.Flatseal"
+      "com.logseq.Logseq"
       "dev.geopjr.Collision"
       "io.github.plrigaux.sysd-manager"
       "org.ferdium.Ferdium"

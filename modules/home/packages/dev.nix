@@ -22,18 +22,14 @@
     python3
     python312Packages.ipython
 
+    ## Kotlin
+    kotlin
+
     ## JavaScript / Node.js
     nodejs
     pnpm
     devbox
     bruno
-    code-cursor
-    aider-chat-full
-    gemini-cli-bin
-    codex
-    opencode
-    antigravity
-    litellm
     google-chrome
     ungoogled-chromium
 
@@ -42,8 +38,10 @@
 
     ## JetBrains IDEs
     jetbrains.gateway
+    jetbrains.idea
     jetbrains.pycharm
     jetbrains.webstorm
+    jetbrains-toolbox
 
     ## Android / Mobile
     scrcpy

@@ -40,10 +40,5 @@
     ghex
     imhex
     wxhexeditor
-
-    ## AI tools
-    claude-code
-    jan
-    llmfit
   ];
 }
