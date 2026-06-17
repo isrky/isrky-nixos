@@ -11,6 +11,8 @@
     video-trimmer
     vlc
 
+    newsflash
+
     ## Office
     libreoffice
     gnome-calculator
