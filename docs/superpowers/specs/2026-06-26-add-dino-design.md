@@ -58,15 +58,7 @@ Insert a single line in the `imports` list, alphabetically placed between `./dis
 - `discord.nix` and `thunderbird.nix` already establish the "one small `home.packages` module per app" convention. Following it keeps the module list scannable.
 - No services, no firewall ports, no D-Bus rules, no overlays — pure package install.
 
-## Testing / verification
-
-1. Build the configuration for any host, e.g. `nh os test .#desktop` (the `nft` shell alias). Build must succeed.
-2. Activate with `nh os switch .#desktop` (`nfs` alias).
-3. Confirm the binary is on `PATH`: `which dino` returns a path under `/nix/store`.
-4. Launch `dino` from the Hyprland environment; the GTK window should appear and accept XMPP account setup interactively (no account is preconfigured by this change).
-5. Repeat for `laptop`, `p14s`, `vm` if those hosts are available locally; otherwise the same build command run against each host name is sufficient.
-
-There is no automated test framework in this repository; the NixOS build itself is the verification.
+Testing and validation are performed by the user out-of-band; no verification steps are defined in this spec.
 
 ## Risks
 
