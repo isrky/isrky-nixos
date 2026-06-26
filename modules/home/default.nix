@@ -9,6 +9,7 @@
     ./cava.nix                        # audio visualizer
     ./direnv.nix
     ./discord.nix                     # discord
+    ./dino.nix                        # dino (XMPP client)
     ./easyeffects.nix                 # easyeffects
     ./fastfetch/fastfetch.nix         # fetch tool
     ./fzf.nix                         # fuzzy finder
@@ -36,7 +37,7 @@
     ./spicetify.nix                   # spotify client
     ./syncthing.nix                   # file synchronization
     ./trayscale.nix                   # tailscale GUI
-    ./superfile/superfile.nix         # terminal file manager
+    # ./superfile/superfile.nix         # terminal file manager
     ./swaylock.nix                    # lock screen
     ./swayosd.nix                     # brightness / volume wiget
     ./swaync/swaync.nix               # notification deamon
