@@ -17,6 +17,8 @@
         "ss05"
       ];
 
+      scrollback-limit = 100000000;
+
       ##### Theme #####
       theme = "gruvbox";
       background-opacity = 0.5;
