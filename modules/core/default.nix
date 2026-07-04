@@ -25,7 +25,7 @@
     ./virtualization.nix
     ./tailscale.nix
     # ./qmk.nix
-    ./dnscrypt-proxy.nix
+    # ./dnscrypt-proxy.nix   # disabled: using DHCP-provided DNS
     ./piper.nix
   ];
 }
