@@ -43,6 +43,9 @@
     jetbrains.webstorm
     jetbrains-toolbox
 
+    ## Editors
+    zed-editor # Zed code editor
+
     ## Android / Mobile
     scrcpy
     android-studio
