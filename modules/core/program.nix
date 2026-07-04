@@ -8,6 +8,10 @@
     gnupg.agent = {
       enable = true;
       enableSSHSupport = true;
+      settings = {
+        default-cache-ttl = 43200;
+        max-cache-ttl = 43200;
+      };
       # pinentryFlavor = "";
     };
 
