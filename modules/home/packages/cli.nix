@@ -71,6 +71,7 @@
     imv
     lowfi
     mpv
+    phockup # photo/video organizer by date
 
     ## Utilities
     entr # perform action when file change
