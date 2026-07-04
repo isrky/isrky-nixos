@@ -45,6 +45,7 @@
     ./waybar                          # status bar
     ./waypaper.nix                    # GUI wallpaper picker
     ./xdg-mimes.nix                   # xdg config
+    ./zed.nix                         # zed editor
     ./zsh                             # shell
   ];
 }
