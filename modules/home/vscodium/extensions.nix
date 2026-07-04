@@ -39,6 +39,7 @@ in
       bradlc.vscode-tailwindcss
       formulahendry.auto-rename-tag
       usernamehw.errorlens
+      svelte.svelte-vscode
 
       ## Tools
       ms-vscode-remote.remote-ssh
