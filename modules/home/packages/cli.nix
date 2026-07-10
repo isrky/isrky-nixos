@@ -46,6 +46,7 @@
     ttyper # cli typing test
 
     ## Monitoring / fetch
+    dnsutils # dig, nslookup, nsupdate
     htop
     inxi # system information tool
     nvtopPackages.nvidia # GPU monitor
