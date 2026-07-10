@@ -17,6 +17,11 @@
       bindel = [
         ", XF86MonBrightnessUp, exec, swayosd-client --brightness raise"
         ", XF86MonBrightnessDown, exec, swayosd-client --brightness lower"
+
+        # mirrors for keyboards without brightness keys (Pebble Keys K380s);
+        # asterisk/minus sit unshifted at the top right of the tr layout
+        "$mod, asterisk, exec, swayosd-client --brightness raise"
+        "$mod, minus, exec, swayosd-client --brightness lower"
       ];
       binde = [
         ", XF86AudioRaiseVolume, exec, swayosd-client --output-volume +2"

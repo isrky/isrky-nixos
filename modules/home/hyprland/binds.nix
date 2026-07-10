@@ -129,6 +129,14 @@
       "$mod SHIFT, Tab, movewindow, mon:+1"
       "$mod CTRL, Tab, movecurrentworkspacetomonitor, +1"
 
+      # mirrors for keyboards without Print/Fn-free F-row (Pebble Keys K380s)
+      # tr layout: keysyms must be reachable without shift/altgr
+      "$mod, I, exec, show-keybinds"
+      "$mod, S, exec, screenshot --copy"
+      "$mod SHIFT, S, exec, screenshot --save"
+      "$mod CTRL, S, exec, screenshot --swappy"
+      "$mod SHIFT, M, exec, toggle-display"
+
       # media and volume controls
       ", XF86AudioPlay,exec, playerctl play-pause"
       ", XF86AudioNext,exec, playerctl next"
