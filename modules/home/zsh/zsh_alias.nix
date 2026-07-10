@@ -30,7 +30,7 @@
       tree = "eza --icons --tree --group-directories-first";
 
       # Nixos
-      cdnix = "cd ~/nixos-config && codium ~/nixos-config";
+      cdnix = "cd ~/nixos-config && zeditor ~/nixos-config";
       cdpio = "cd /home/ismails/Documents/PlatformIO/Projects";
       cdprojects = "cd /home/ismails/Documents/projects";
       ns = "nom-shell --run zsh";
