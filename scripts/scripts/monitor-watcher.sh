@@ -2,6 +2,13 @@
 
 # based on https://github.com/ash-17/omarchy-external-monitor/tree/d06a323e7fb39d73be3955b94305830bfdc4a74a
 
+# keeps both monitors active and pins workspaces 6-10 to the external
+# monitor (detected at runtime); 1-5 are pinned to eDP-1 statically
+# in the nix config
+
+INTERNAL="eDP-1"
+EXTERNAL_WORKSPACES="6 7 8 9 10"
+
 restart-apps() {
     # restart wallpaper
     pkill .awww-daemon-wr 2> /dev/null
@@ -17,22 +24,22 @@ restart-apps() {
 }
 
 handle-monitor-state() {
-    # detect external monitors (HDMI-* or DP-*)
-    external_present=$(hyprctl monitors | grep -E "^Monitor (HDMI-|DP-)" || true)
+    # name of the first external monitor (HDMI-* or DP-*), if any
+    external=$(hyprctl monitors | awk '/^Monitor (HDMI-|DP-)/ {print $2; exit}')
 
-    # count enabled monitors
-    enabled_count=$(hyprctl monitors | grep -c "^Monitor")
-
-    # is an external monitor connected
-    if [ -n "$external_present" ]; then
-
-        # only disable eDP-1 if more than 1 monitor is active
-        if [ "$enabled_count" -gt 1 ]; then
-            hyprctl keyword monitor "eDP-1,disable"
-        fi
+    if [ -n "$external" ]; then
+        # bind workspaces 6-10 to the external monitor and move them over
+        for ws in $EXTERNAL_WORKSPACES; do
+            hyprctl keyword workspace "$ws, monitor:$external" > /dev/null
+            hyprctl dispatch moveworkspacetomonitor "$ws" "$external" > /dev/null
+        done
     else
-        # no external monitor - enable laptop screen
-        hyprctl keyword monitor "eDP-1,preferred,auto,1"
+        # no external monitor: make sure the laptop panel is enabled
+        # (hyprland moves orphaned workspaces back automatically)
+        hyprctl keyword monitor "$INTERNAL,preferred,auto,1" > /dev/null
+        for ws in $EXTERNAL_WORKSPACES; do
+            hyprctl keyword workspace "$ws, monitor:$INTERNAL" > /dev/null
+        done
     fi
 }
 
@@ -47,6 +54,7 @@ socat -U - UNIX-CONNECT:"$XDG_RUNTIME_DIR/hypr/$HYPRLAND_INSTANCE_SIGNATURE/.soc
     while read -r line; do
         # react on external monitor plug/unplug or hyprland reload
         if echo "$line" | grep -qE "monitor(added|removed)>>(HDMI-|DP-)|configreloaded"; then
+            sleep 0.5 # let hyprland settle the new monitor
             handle-monitor-state
             restart-apps
         fi
