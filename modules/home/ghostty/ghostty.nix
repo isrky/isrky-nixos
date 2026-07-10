@@ -66,10 +66,17 @@
         "alt+digit_3=goto_tab:3"
         "alt+digit_4=goto_tab:4"
 
+        "ctrl+equal=increase_font_size:1"
+        "ctrl++=increase_font_size:1"
+        "ctrl+-=decrease_font_size:1"
+        "ctrl+0=reset_font_size"
+
+        # trq layout: named keys are physical positions and win over
+        # codepoints; the key printed '-' is physical "equal" (rebound
+        # from increase above), '+' is shift+4 and '=' is shift+0
+        "ctrl+equal=decrease_font_size:1"
         "ctrl+shift+digit_4=increase_font_size:1"
         "ctrl+shift+digit_0=increase_font_size:1"
-        "ctrl+minus=decrease_font_size:1"
-        "ctrl+0=reset_font_size"
 
         "shift+page_down=scroll_page_down"
         "shift+page_up=scroll_page_up"
