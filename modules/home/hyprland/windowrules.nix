@@ -30,6 +30,8 @@
       "match:class ^(Aseprite)$, workspace 4"
       "match:class ^(Audacious)$, workspace 5"
       "match:class ^(spotify)$, workspace 5"
+      "match:class ^(org.keepassxc.KeePassXC)$, workspace 6"
+      "match:class ^(chromium-browser)$, workspace 7"
       "match:class ^(com.obsproject.Studio)$, workspace 8"
       "match:class ^(discord)$, workspace 10"
       "match:class ^(WebCord)$, workspace 10"
