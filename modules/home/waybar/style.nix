@@ -27,7 +27,7 @@ in
       border-radius: 0px;
       padding: 0;
       margin: 0;
-      font-family: ${font};
+      font-family: ${font}, "Symbols Nerd Font";
       font-weight: ${font_weight};
       opacity: ${opacity};
       font-size: ${font_size};
