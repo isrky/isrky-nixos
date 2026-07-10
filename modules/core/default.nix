@@ -13,7 +13,7 @@
     ./program.nix
     ./security.nix
     ./services.nix
-    ./zapret.nix
+    # ./zapret.nix
     ./sunshine.nix
     ./code-server.nix
     ./steam.nix
