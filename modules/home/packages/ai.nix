@@ -4,10 +4,10 @@
     ## AI tools
     aider-chat-full
     antigravity
+    antigravity-cli
     claude-code
     code-cursor
     codex
-    gemini-cli-bin
     jan
     litellm
     llmfit
