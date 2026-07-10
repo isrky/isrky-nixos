@@ -7,12 +7,12 @@
 
     gnupg.agent = {
       enable = true;
-      enableSSHSupport = true;
       settings = {
         default-cache-ttl = 43200;
         max-cache-ttl = 43200;
       };
-      # pinentryFlavor = "";
+      # GCR prompt with "save in password manager" -> gnome-keyring
+      pinentryPackage = pkgs.pinentry-gnome3;
     };
 
     appimage.enable = true;

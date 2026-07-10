@@ -23,6 +23,7 @@
     gnome-disk-utility
     popsicle
     mission-center # GUI resources monitor
+    seahorse # gnome-keyring UI
     zenity
 
     ## Level editor
