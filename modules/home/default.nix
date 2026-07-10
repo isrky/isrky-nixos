@@ -36,6 +36,7 @@
     ./ssh.nix                         # ssh config
     ./spicetify.nix                   # spotify client
     ./syncthing.nix                   # file synchronization
+    ./thunderbird.nix                 # email client
     ./trayscale.nix                   # tailscale GUI
     # ./superfile/superfile.nix         # terminal file manager
     ./swaylock.nix                    # lock screen
