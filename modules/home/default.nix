@@ -29,6 +29,7 @@
     ./obsidian.nix
     ./p10k/p10k.nix
     ./packages                        # other packages
+    ./playwright.nix                  # playwright browsers + env for node/hono
     ./pomo/pomo.nix                   # TUI Pomodoro timer
     ./retroarch.nix  
     ./rofi/rofi.nix                   # launcher
