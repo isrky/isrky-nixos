@@ -124,6 +124,11 @@
       "$mod ALT, k, moveactive, 0 -80"
       "$mod ALT, l, moveactive, 80 0"
 
+      # monitor control
+      "$mod, Tab, focusmonitor, +1"
+      "$mod SHIFT, Tab, movewindow, mon:+1"
+      "$mod CTRL, Tab, movecurrentworkspacetomonitor, +1"
+
       # media and volume controls
       ", XF86AudioPlay,exec, playerctl play-pause"
       ", XF86AudioNext,exec, playerctl next"
