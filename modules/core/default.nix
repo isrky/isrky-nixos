@@ -25,6 +25,7 @@
     ./wayland.nix
     ./virtualization.nix
     ./tailscale.nix
+    ./keyd.nix
     # ./qmk.nix
     # ./dnscrypt-proxy.nix   # disabled: using DHCP-provided DNS
     ./piper.nix
