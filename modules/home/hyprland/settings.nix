@@ -4,8 +4,9 @@
     "$mod" = "SUPER";
 
     input = {
+      # no kb_options: grp:alt_caps_toggle had no second layout to switch to,
+      # and it stole alt+caps, which keyd passes through as real caps lock.
       kb_layout = "tr";
-      kb_options = "grp:alt_caps_toggle";
 
       repeat_delay = 300;
       numlock_by_default = true;

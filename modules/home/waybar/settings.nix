@@ -15,6 +15,7 @@ let
     magenta = "#B16286";
     cyan = "#689D6A";
     orange = "#D65D0E";
+    orange_bright = "#FE8019";
     opacity = "1";
     indicator_height = "2px";
   };
@@ -35,6 +36,8 @@ in
     ];
     modules-center = [ "clock" ];
     modules-right = [
+      # leftmost so showing/hiding it doesn't shift the modules after it
+      "custom/keyd-nav"
       "cpu"
       "memory"
       # "disk"
@@ -142,6 +145,16 @@ in
       format-fr = "FR";
       format-en = "US";
       on-click = "hyprctl switchxkblayout at-translated-set-2-keyboard next";
+    };
+    # fed by the keyd-led service: capslock swaps wasd for arrows, and the
+    # k380s has no caps light to show it. hidden when the file is empty.
+    "custom/keyd-nav" = {
+      format = "<span foreground='${orange_bright}'>↑</span> ARROWS";
+      exec = "cat /run/keyd-nav/state";
+      interval = "once";
+      signal = 8;
+      tooltip = true;
+      tooltip-format = "WASD are arrow keys — CapsLock to toggle";
     };
     "custom/launcher" = {
       format = "";

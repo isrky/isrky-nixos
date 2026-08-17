@@ -80,7 +80,7 @@ in
       padding: 1px;
     }
 
-    #pulseaudio, #network, #cpu, #memory, #disk, #battery, #language, #custom-timew, #custom-notification, #custom-power-menu {
+    #pulseaudio, #network, #cpu, #memory, #disk, #battery, #language, #custom-keyd-nav, #custom-timew, #custom-notification, #custom-power-menu {
       padding-left: 5px;
       padding-right: 5px;
       margin-right: 10px;
