@@ -2,12 +2,12 @@
 
 # based on https://github.com/ash-17/omarchy-external-monitor/tree/d06a323e7fb39d73be3955b94305830bfdc4a74a
 
-# keeps both monitors active and pins workspaces 6-10 to the external
-# monitor (detected at runtime); 1-5 are pinned to eDP-1 statically
+# keeps both monitors active and pins workspaces 7-10 to the external
+# monitor (detected at runtime); 1-6 are pinned to eDP-1 statically
 # in the nix config
 
 INTERNAL="eDP-1"
-EXTERNAL_WORKSPACES="6 7 8 9 10"
+EXTERNAL_WORKSPACES="7 8 9 10"
 
 restart-apps() {
     # restart wallpaper

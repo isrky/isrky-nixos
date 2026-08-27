@@ -15,7 +15,7 @@ in
         else
           [ ",preferred,auto,auto" ];
 
-      # workspaces 1-5 live on the laptop panel; 6-10 are bound to the
+      # workspaces 1-6 live on the laptop panel; 7-10 are bound to the
       # external monitor at runtime by monitor-watcher (name is dynamic)
       workspace =
         if isLaptop then
@@ -25,6 +25,7 @@ in
             "3, monitor:eDP-1"
             "4, monitor:eDP-1"
             "5, monitor:eDP-1"
+            "6, monitor:eDP-1"
           ]
         else
           [ ];
