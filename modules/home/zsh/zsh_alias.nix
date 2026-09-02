@@ -43,6 +43,7 @@
       nfs = "nh-notify nh os switch";
       nfu = "nh-notify nh os boot --update";
       nsearch = "nh search";
+      ccl = "npx -y @anthropic-ai/claude-code@latest"; # claude code latest, without waiting for nfu (npx re-resolves tags each run, no stale cache)
 
       # python
       piv = "python -m venv .venv";
