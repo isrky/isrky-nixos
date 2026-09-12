@@ -1,4 +1,4 @@
-{ ... }:
+{ username, ... }:
 {
   services.tailscale = {
     enable = true;
@@ -6,6 +6,8 @@
     useRoutingFeatures = "server";
     extraSetFlags = [
       "--accept-dns=false"
+      # Let the regular user run `tailscale serve` etc. without sudo.
+      "--operator=${username}"
       # Expose the GlobalProtect-only host to the tailnet. Only works while the
       # openconnect VPN is up; tailscale SNATs forwarded traffic to the VPN
       # address by default. The route must be approved in the admin console.
