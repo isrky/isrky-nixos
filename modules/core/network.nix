@@ -2,7 +2,11 @@
 {
   networking = {
     hostName = "${host}";
-    networkmanager.enable = true;
+    networkmanager = {
+      enable = true;
+      # vpn plugin: adds PAN GlobalProtect (and AnyConnect, Pulse, Fortinet...) to nm-connection-editor
+      plugins = with pkgs; [ networkmanager-openconnect ];
+    };
     search = [ "ts.net" ];
     firewall = {
       enable = true;
